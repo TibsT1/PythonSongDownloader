@@ -1,0 +1,19 @@
+<MyRoot>
+
+    url_label: url_label
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "YTDL"
+            font_size: 64
+        TextInput:
+            id: url_label
+            color: 0, 0, 0
+            text: "Replace with URL..."
+            font_size: 32
+        Button:
+            text: "Convert"
+            font_size: 32
+            size: 100, 50
+            on_press: root.converter()
